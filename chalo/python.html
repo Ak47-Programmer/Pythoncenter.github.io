@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Amit Techz</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="khul.css">
+</head>
+<body>
+
+
+	<div class="image">
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+			<div class="container">
+				<a href="https://forloop4.blogspot.com/" class="navbar-brand text-warning font-weight-bold">Amit's Programming Center</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenavbar">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse text-center" id="collapsenavbar">
+				<ul class="navbar-nav ml-auto ">
+				<li class="nav-item">
+					<a href="https://forloop4.blogspot.com/" class="nav-link">
+						Home
+					</a></li>
+					<li class="nav-item">
+					<a href="https://forloop4.blogspot.com/" class="nav-link">
+						Services
+					</a></li>
+					<li class="nav-item">
+					<a href="https://forloop4.blogspot.com/" class="nav-link">
+						About Us
+					</a></li>
+					<li class="nav-item">
+					<a href="https://forloop4.blogspot.com/" class="nav-link">
+						Contact Us
+					</a></li>
+					
+					
+
+				
+</ul>
+</div>
+			
+
+			</div>
+			
+		</nav>
+		<div class="mera"><em><h2>This Website Created By Amit Only For Study Purposes Only :) </h2></em></div>
+	</div>
+	
+		
+		
+
+
+	<div class="tera">
+	<form class="back" action="register.php" method="post" onSubmit = "return checkPassword(this)">
+	
+		<label for="first"><b>Username:</b></label><br><br>
+		<input type="text" name="user" id="first" required autocomplete="off" placeholder="Enter Your Username....."><br><br>
+		<label for="second"><b>Password:</b></label><br><br>
+		<input type="password" name="pass" id="second" required placeholder="Enter Your Password....."><br><br>
+		<label for="secy"><b> Re-Type-Password:</b></label><br><br>
+		<input type="password" name="pasw" id="secy" required placeholder="Enter Your Password Again....."><br><br><input type="checkbox" onclick="myFunction()">Show Password<br><br>
+		<label for="fir"><b>Gender: </b></label>
+		<b>Male: </b><input type="radio" name="gender" value="Male" id="fir" required><b>Female: </b><input type="radio" name="gender" value="Female" id="first" required><br><br>
+		<label for="review"><b>Write One Line Review About this Design: </b></label><br><br>
+       <textarea id="review" name="Feedback" rows="2" cols="50" required></textarea><br><br>
+		
+		<input type="reset" name="submit" value="Reset">
+		<input type="submit" name="submit" value="SignUp">
+
+
+
+<div class="your">
+	<h4>Do you Have Already Account Login Here..<a href="Login.html">Login Now</a></h4>
+</div>
+
+	</form>
+
+	
+	</div>
+
+	<footer>
+		<h2>&copy All Rights Reserved By Amit</h2>
+	</footer>
+
+	
+  <script type="text/javascript">
+  	
+          
+            
+            function checkPassword(form) { 
+               var password1 = form.pass.value; 
+              var  password2 = form.pasw.value; 
+  
+                 
+                if (password1 == '') 
+                {
+                    alert ("Please enter Password"); 
+                }
+                      
+                
+                else if (password2 == '') 
+                {
+                    alert ("Please enter confirm password"); 
+                }
+                      
+                 
+                else if (password1 != password2) { 
+                    alert ("Password did not match: Please try again...") 
+                    return false; 
+                } 
+  
+                else{ 
+
+                	alert("Password match Ok Login Now You Re-Direct on Login Page..")
+                    
+                    return true; 
+                } 
+            } 
+        
+
+  function myFunction()
+  {
+  	var x = document.getElementById("second");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+  }
+  
+	
+		
+	
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+  
+</body>
+</html>
